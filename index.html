@@ -18,62 +18,64 @@
         }
     </script>
 </head>
-<body class="bg-gray-100 font-sans grid grid-cols-4">
+<body class="bg-gray-100 font-sans grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
 
-    <div class="flex items-center justify-center col-span-1 py-8">
-        <div class="bg-white p-10 rounded-3xl shadow-xl border-t-4 border-principal max-w-sm text-center">
+    <div class="flex items-center justify-center py-4">
+        <div class="bg-white p-10 rounded-3xl shadow-xl border-t-4 border-principal max-w-sm text-center h-full flex flex-col justify-between">
             <h1 class="text-3xl font-bold text-gray-800 mb-4">¡Todo listo!</h1>
             <p class="text-gray-600 mb-6">
                 Ya tienes Tailwind funcionando. No necesitas terminal, solo guarda y refresca.
             </p>
-            <button class="bg-principal text-white px-6 py-2 rounded-lg hover:opacity-90 transition hover:scale-105">
+            <button class="bg-principal text-white px-6 py-2 rounded-lg hover:opacity-90 transition hover:scale-105 mt-auto">
                 Empezar a crear
             </button>
         </div>
     </div>
 
-    <div class="flex items-center justify-center">
-        <div class="bg-white p-10 rounded-3xl shadow-xl border-t-4 border-emerald-500 max-w-sm text-center">
+    <div class="flex items-center justify-center py-4">
+        <div class="bg-white p-10 rounded-3xl shadow-xl border-t-4 border-emerald-500 max-w-sm text-center h-full flex flex-col justify-between">
             <h1 class="text-3xl font-semibold text-gray-500 mb-4">Vamos a seguir!!</h1>
             <p class="mb-6">
                 Sigue aprendiendo, que nada te detenga, estás mas cerca de lo que te imaginas.
             </p>
-            <button class="bg-emerald-500 text-white px-6 py-2 rounded-lg hover:opacity-90 transition hover:scale-105">
+            <button class="bg-emerald-500 text-white px-6 py-2 rounded-lg hover:opacity-90 transition hover:scale-105 mt-auto">
                 Sigue creando
             </button>
         </div>
     </div>
 
-    <div class="flex items-center justify-center">
-        <div class="bg-white p-10 rounded-3xl shadow-xl border-t-4 border-principal max-w-sm text-center">
+    <div class="flex items-center justify-center py-4">
+        <div class="bg-white p-10 rounded-3xl shadow-xl border-t-4 border-principal max-w-sm text-center h-full flex flex-col justify-between">
             <h1 class="text-3xl font-bold text-gray-800 mb-4">¡Todo listo!</h1>
             <p class="text-gray-600 mb-6">
                 Ya tienes Tailwind funcionando. No necesitas terminal, solo guarda y refresca.
             </p>
-            <button class="bg-principal text-white px-6 py-2 rounded-lg hover:opacity-90 transition hover:scale-105">
+            <button class="bg-principal text-white px-6 py-2 rounded-lg hover:opacity-90 transition hover:scale-105 mt-auto">
                 Empezar a crear
             </button>
         </div>
     </div>
 
-    <div class="flex items-center justify-center">
-        <div class="bg-white p-10 rounded-3xl shadow-xl border-t-4 border-principal max-w-sm text-center">
+    <div class="flex items-center justify-center py-4">
+        <div class="bg-white p-10 rounded-3xl shadow-xl border-t-4 border-principal max-w-sm text-center h-full flex flex-col justify-between">
             <h1 class="text-3xl font-bold text-gray-800 mb-4">¡Todo listo!</h1>
             <p class="text-gray-600 mb-6">
                 Ya tienes Tailwind funcionando. No necesitas terminal, solo guarda y refresca.
             </p>
-            <button class="bg-principal text-white px-6 py-2 rounded-lg hover:opacity-90 transition hover:scale-105">
+            <button class="bg-principal text-white px-6 py-2 rounded-lg hover:opacity-90 transition hover:scale-105 mt-auto">
                 Empezar a crear
             </button>
         </div>
     </div>
 
-    <div class="col-span-4 flex items-center justify-center">
-        <div class="bg-white p-10 rounded-3xl shadow-xl border-t-4 border-cyan-500 max-w-sm text-center">
-            <h2 class="text-3xl font-bold">Esta fila ocupa 4 columnas, es otra forma de hacer el grid en tailwind</h2>
-            <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iure commodi ducimus</p>
-            <input type="text" placeholder="Escribe aquí..." class="border border-t-emerald-800 rounded-full p-2 shadow-xl hover:bg-emerald-200">
-            <button onclick="enviar()" class="rounded-3xl border border-emerald-500 p-2 hover:bg-emerald-200 hover:scale-110">Enviar</button>
+    <div class="col-span-1 sm:col-span-2 lg:col-span-4 flex items-center justify-center py-4">
+        <div class="bg-white p-10 rounded-3xl shadow-xl border-t-4 border-cyan-500 max-w-2xl text-center">
+            <h2 class="text-2xl font-bold text-gray-800">Esta fila se adapta a las columnas de cada pantalla</h2>
+            <p class="py-4 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iure commodi ducimus</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 items-center">
+                <input type="text" placeholder="Escribe aquí..." class="border border-emerald-800 rounded-full p-2 shadow-xl hover:bg-emerald-200 w-full sm:w-auto">
+                <button onclick="enviar()" class="rounded-3xl border border-emerald-500 px-6 py-2 hover:bg-emerald-200 hover:scale-110 transition w-full sm:w-auto">Enviar</button>
+            </div>
         </div>
     </div>
 
